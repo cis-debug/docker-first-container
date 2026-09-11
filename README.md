@@ -27,9 +27,9 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/index.html
 EXPOSE 80
 
-FROM nginx:alpine : image Nginx légère
+"FROM nginx:alpine : image Nginx légère
 COPY ... : copie la page dans le dossier web par défaut de Nginx
-EXPOSE 80 : documentation du port HTTP utilisé dans le conteneur
+EXPOSE 80 : documentation du port HTTP utilisé dans le conteneur"
 
 
 ## Build de l’image
@@ -38,13 +38,13 @@ sudo docker build -t hello-nginx:1.0 .
 ## Lancer le conteneur
 sudo docker run -d --name hello-web -p 8080:80 hello-nginx:1.0
 
--d : lance en arrière-plan
+"-d : lance en arrière-plan
 --name hello-web : nom du conteneur
--p 8080:80 : port host 8080 → port conteneur 80
+-p 8080:80 : port host 8080 → port conteneur 80"
 
 
 ## Vérification
-Conteneurs en cours d’exécution :
+## Conteneurs en cours d’exécution :
 
 sudo docker ps
 
