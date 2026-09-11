@@ -54,5 +54,6 @@ curl -i http://localhost:8080
 ## Logs / Stop / Remove (rm)
 EX: sudo docker logs hello-web
 
-
+## Obtenir les informations détaillées du conteneur
+docker inspect docker-first-container
 
